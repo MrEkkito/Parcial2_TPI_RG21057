@@ -1,5 +1,8 @@
 <?php
+namespace app\controllers;
+
 require_once "models/CreditoModel.php";
+use app\models\Credito;
 
 class CreditoController {
 
