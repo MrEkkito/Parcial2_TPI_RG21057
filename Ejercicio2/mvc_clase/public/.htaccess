@@ -1,0 +1,8 @@
+Options -MultiViews
+RewriteEngine On
+
+# No redirigir si el archivo o la carpeta existe
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^ index.php [QSA,L]
