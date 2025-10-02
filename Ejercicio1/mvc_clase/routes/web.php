@@ -10,7 +10,8 @@ use lib\Route;
 Route::get("/test",  [InicioController::class,"index"]);
 
 //CREDITO 
-//Route::get("/home", [CreditoController::class,"index"]);
-//Route::post("/home", [CreditoController::class,"index"]);
+Route::get("/home", [CreditoController::class,"index"]);
+Route::post("/home", [CreditoController::class,"index"]);
+
 // Ejecutar el router
 Route::dispatch();
