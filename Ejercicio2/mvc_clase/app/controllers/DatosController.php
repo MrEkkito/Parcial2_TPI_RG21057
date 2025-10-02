@@ -12,12 +12,10 @@ class DatosController {
     }
 
         public function index() {
-    // Verificar si se envió el formulario
     if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['agregar'])) {
         $nombre = $_POST['nombre'];
         $email = $_POST['email'];
         $this->model->insert($nombre, $email);
-        // Redirigir para evitar reenvío de formulario
         header("Location: /mvc_clase/public/Datos");
         exit;
     }
@@ -31,7 +29,6 @@ class DatosController {
 
     public function delete($id) {
     $this->model->delete($id);
-    // Redirigir para actualizar la lista
     header("Location: /mvc_clase/public/Datos");
     exit;
 }

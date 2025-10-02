@@ -14,7 +14,6 @@
     <button type="submit" name="agregar">Agregar</button>
 </form>
 
-    <!-- Lista de estudiantes -->
     <h2>Lista de estudiantes</h2>
     <ul>
         <?php if(!empty($estudiantes)): ?>

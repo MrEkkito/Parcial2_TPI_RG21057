@@ -8,6 +8,7 @@ class CreditoController {
 
     public function formulario() {
         require "views/FormularioView.php";
+        
     }
 
     public function simular() {

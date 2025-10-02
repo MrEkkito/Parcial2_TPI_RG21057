@@ -28,7 +28,6 @@ class Route {
         }
 
         foreach (self::$routes[$method] as $url => $funcion) {
-            // Manejo de rutas con parámetros como /user/:id
             if (strpos($url, ":") !== false) {
                 $url = preg_replace("#:[a-zA-Z]+#", "([a-zA-Z0-9_-]+)", $url);
             }
