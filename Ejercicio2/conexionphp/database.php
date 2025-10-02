@@ -2,7 +2,7 @@
 
 class Database {
     private $host = "db";
-    private $db_name = "db_estudiantes";
+    private $db_name = "alumno";
     private $username = "root";
     private $password = "rootpass";
     private $conn;

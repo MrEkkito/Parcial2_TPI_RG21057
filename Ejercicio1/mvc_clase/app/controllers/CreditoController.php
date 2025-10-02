@@ -1,10 +1,10 @@
 <?php
-require_once "models/Credito.php";
+require_once "models/CreditoModel.php";
 
 class CreditoController {
 
     public function formulario() {
-        require "views/formulario.php";
+        require "views/FormularioView.php";
     }
 
     public function simular() {

@@ -1,16 +1,11 @@
 <?php
 
-use app\controllers\HomeController;
-use app\controllers\DatosController;
+use app\controllers\CreditoController;
+
 use lib\Route;
 
 // Home
-Route::get("/Home", [HomeController::class,"index"]);
-
-Route::get("/Datos", [DatosController::class,"index"]);
-Route::post("/Datos", [DatosController::class,"index"]); // <-- permitir POST
-Route::get("/Datos/delete/:id", [DatosController::class, "delete"]);
-
+Route::get("/Home", [CreditoController::class,"index"]);
 
 // Ejecutar el router
 Route::dispatch();
